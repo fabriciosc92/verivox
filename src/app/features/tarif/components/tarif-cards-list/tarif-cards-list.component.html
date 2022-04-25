@@ -1,0 +1,12 @@
+<div class="tarif-cards-list container-lg pt-4">
+  <ng-container *ngIf="tarifs$ | async; else loading">
+    <div *ngFor="let tarif of tarifs$ | async; let index = index">
+      <app-tarif-card [data]="tarif" [index]="index + 1"></app-tarif-card>
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    <div class="progress mt-4">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
+    </div>
+  </ng-template>
+</div>

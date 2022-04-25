@@ -1,0 +1,63 @@
+<div class="card position-relative mb-3">
+  <span class="d-none d-md-block border-end position-absolute h-100 px-2 pt-5">{{ index }}.</span>
+  <span class="d-md-none position-absolute h-100 px-2 pt-2">{{ index }}.</span>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-5 fw-bold fs-6 ps-sm-5 ps-4 pe-sm-0">{{ data.name }}</div>
+      <div class="col-md-3 col-sm-4 col-2 px-0 px-sm-3">
+        <div class="row flex-column">
+          <div class="col">
+            <p class="m-0 d-none d-md-block">Download</p>
+            <div class="d-sm-flex d-none flex-row speed-box">
+              <div class="border border-3 bg-success arrow px-4"><fa-icon [icon]="faArrowDown"></fa-icon></div>
+              <div class="border border-2 border-start-0 rounded-pill w-75 speed text-center">
+                {{ data.download }} Mbit/s
+              </div>
+            </div>
+            <div class="d-block d-sm-none">
+              <div class="d-flex justify-content-between">
+                <fa-icon [icon]="faArrowDown"></fa-icon><span>{{ data.download }}</span>
+              </div>
+              <div class="text-end">Mbit/s</div>
+            </div>
+          </div>
+          <div class="col mt-2">
+            <p class="m-0 d-none d-md-block">Upload</p>
+            <div class="d-sm-flex d-none flex-row speed-box">
+              <div class="border border-3 bg-warning arrow px-4"><fa-icon [icon]="faArrowUp"></fa-icon></div>
+              <div class="border border-2 border-start-0 rounded-pill w-75 speed text-center">
+                {{ data.upload }} Mbit/s
+              </div>
+            </div>
+            <div class="d-block d-sm-none">
+              <div class="d-flex justify-content-between">
+                <fa-icon [icon]="faArrowUp"></fa-icon><span>{{ data.upload }}</span>
+              </div>
+              <div class="text-end">Mbit/s</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 d-none d-sm-none d-md-block">
+        <ul>
+          <li *ngFor="let benefit of data.benefits">{{ benefit }}</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-4 col-5 position-relative">
+        <div class="row flex-sm-column flex-row">
+          <div class="col-8 col-sm-12 text-end fw-bold fs-5 text-nowrap px-0 px-sm-3">{{ data.value | currency }}</div>
+          <div class="col-1 col-sm-12 text-end d-grid ps-sm-5 mt-sm-3">
+            <button class="btn btn-primary d-none d-sm-block" type="button">
+              <span class="d-sm-inline d-none">To Tariff</span>
+              <fa-icon class="ms-sm-4" [icon]="faChevronRight"></fa-icon>
+            </button>
+            <button class="btn btn-primary position-absolute end-0 me-2 h-100 d-sm-none" type="button">
+              <span class="d-sm-inline d-none">To Tariff</span>
+              <fa-icon class="ms-sm-4" [icon]="faChevronRight"></fa-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

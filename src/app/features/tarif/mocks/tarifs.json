@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Tarif Name 1",
+    "download": 12,
+    "upload": 6,
+    "benefits": ["Tarif Benefit 1", "Tarif Benefit 2", "Tarif Benefit 3", "Tarif Benefit 4"],
+    "value": 123.45
+  },
+  {
+    "name": "Tarif Name 2",
+    "download": 24,
+    "upload": 12,
+    "benefits": ["Tarif Benefit 1", "Tarif Benefit 2", "Tarif Benefit 3", "Tarif Benefit 4"],
+    "value": 234.56
+  },
+  {
+    "name": "Tarif Name 3",
+    "download": 36,
+    "upload": 18,
+    "benefits": ["Tarif Benefit 1", "Tarif Benefit 2", "Tarif Benefit 3", "Tarif Benefit 4"],
+    "value": 345.67
+  },
+  {
+    "name": "Tarif Name 4",
+    "download": 48,
+    "upload": 24,
+    "benefits": ["Tarif Benefit 1", "Tarif Benefit 2", "Tarif Benefit 3", "Tarif Benefit 4"],
+    "value": 456.78
+  },
+  {
+    "name": "Tarif Name 5",
+    "download": 60,
+    "upload": 30,
+    "benefits": ["Tarif Benefit 1", "Tarif Benefit 2", "Tarif Benefit 3", "Tarif Benefit 4"],
+    "value": 567.89
+  },
+  {
+    "name": "Tarif Name 6",
+    "download": 72,
+    "upload": 36,
+    "benefits": ["Tarif Benefit 1", "Tarif Benefit 2", "Tarif Benefit 3", "Tarif Benefit 4"],
+    "value": 678.9
+  }
+]
